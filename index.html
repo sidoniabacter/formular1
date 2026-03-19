@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fișă Înregistrare Pacient</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <body
+      style="
+        background-image: url(&quot;spital1.jpeg&quot;);
+        background-size: cover;
+      "
+    ></body>
+    <div class="container">
+      <div class="header">
+        <h1>Clinica Medicală</h1>
+        <p>Fișă Înregistrare Pacient</p>
+      </div>
+
+      <form action="connect.php" method="post">
+        <div class="form-section">
+          <h2>Date Personale</h2>
+
+          <label>Nume</label>
+          <input type="text" name="nume" required />
+
+          <label>Prenume</label>
+          <input type="text" name="prenume" required />
+
+          <label>CNP</label>
+          <input type="text" name="cnp" required />
+
+          <label>Sex</label>
+          <div class="gender">
+            <label
+              ><input type="radio" name="sex" value="Masculin" />
+              Masculin</label
+            >
+            <label
+              ><input type="radio" name="sex" value="Feminin" /> Feminin</label
+            >
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h2>Date Contact</h2>
+
+          <label>Email</label>
+          <input type="email" name="email" />
+
+          <label>Telefon</label>
+          <input type="tel" name="tel" />
+
+          <label>Adresă</label>
+          <input type="text" name="adresa" />
+
+          <label>Secție</label>
+          <input type="text" name="sectie" required />
+        </div>
+
+        <button type="submit" class="btn">Următoarea pagină</button>
+      </form>
+    </div>
+  </body>
+</html>

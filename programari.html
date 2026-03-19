@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fișă Înregistrare Pacient</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+
+  <body>
+    <body
+      style="
+        background-image: url(&quot;spital1.jpeg&quot;);
+        background-size: cover;
+      "
+    ></body>
+    <div class="container">
+      <div class="header">
+        <h1>Clinica Medicală</h1>
+        <p>Fișă Înregistrare Pacient</p>
+      </div>
+
+      <form action="connect1.php" method="post">
+        <label>Medicul</label>
+        <select name="medici" required>
+          <option value="">Selectează medicul</option>
+          <option value="Dr. Popescu">Dr. Popescu</option>
+          <option value="Dr. Ionescu">Dr. Ionescu</option>
+          <option value="Dr. Viorela Panța">Dr. Viorela Panța</option>
+          <option value="Dr. Căpățânâ Corneliu">Dr. Căpățânâ Corneliu</option>
+          <option value="Dr. Costescu Mihnea">Dr. Costescu Mihnea</option>
+          <option value="Dr. Diac Iuliana">Dr. Diac Iuliana</option>
+          <option value="Dr. Dumitru Ștefan">Dr. Dumitru Ștefan</option>
+          <option value="Dr. Popov Valentyn">Dr. Popov Valentyn</option>
+          <option value="Dr. Goleanu Olivia">Dr. Goleanu Olivia</option>
+          <option value="Dr. Gorun Gabriel">Dr. Gorun Gabriel</option>
+          <option value="Dr. Hostiuc Iulian">Dr. Hostiuc Iulian</option>
+          <option value="Dr. Iatan Gheorghe">Dr. Iatan Gheorghe</option>
+          <option value="Dr. Iftenie Valentin">Dr. Iftenie Valentin</option>
+          <option value="Dr. Isailă Oana">Dr. Isailă Oana</option>
+          <option value="Dr. Roșu Mariana">Dr. Roșu Mariana</option>
+          <option value="Dr. Sîrbu Adrian">Dr. Sîrbu Adrian</option>
+          <option value="Dr. Stan Cristian">Dr. Stan Cristian</option>
+          <option value="Dr. Tudor Luminița">Dr. Tudor Luminița</option>
+          <option value="Dr. Țurlea Ruxandra">Dr. Țurlea Ruxandra</option>
+          <option value="Dr. Perju Filofteia">Dr. Perju Filofteia</option>
+        </select>
+
+        <label>Data programării</label>
+        <input
+          type="date"
+          id="data_programarii"
+          name="data_programarii"
+          required
+        />
+        <p id="eroare" style="color: red; display: none">
+          Nu se pot face programări în weekend!
+        </p>
+
+        <label>Ora programării</label>
+        <input type="time" name="ora_programarii" required />
+
+        <button type="submit">Programează-te</button>
+      </form>
+    </div>
+  </body>
+</html>
